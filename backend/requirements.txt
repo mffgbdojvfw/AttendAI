@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+supabase
+insightface
+onnxruntime
+opencv-python-headless
+numpy
+requests
