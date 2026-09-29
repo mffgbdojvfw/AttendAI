@@ -8,4 +8,4 @@ onnxruntime
 opencv-python-headless
 numpy
 requests
-scikit-image==0.23.2
+
