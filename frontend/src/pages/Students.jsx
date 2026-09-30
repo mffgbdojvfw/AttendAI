@@ -357,16 +357,21 @@ function Students() {
   // ==========================================
 
   function handleEditChange(event) {
-    const {
-      name,
-      value,
-    } = event.target;
+  const {
+    name,
+    value,
+  } = event.target;
 
-    setEditForm((previous) => ({
-      ...previous,
-      [name]: value,
-    }));
-  }
+  const formattedValue =
+    name === "division"
+      ? value.toUpperCase()
+      : value;
+
+  setEditForm((previous) => ({
+    ...previous,
+    [name]: formattedValue,
+  }));
+}
 
   // ==========================================
   // SAVE EDITED STUDENT
